@@ -428,7 +428,7 @@ static int ns_set(int type, const char *server, const char *share, const char *v
             {
                 credentials = sdscatfmt(credentials, "username=%s,password=%s", username, password);
             }
-            mnt_opts = sdscatfmt(mnt_opts, "%s,%s,ro,uid=mpd,gid=audio,iocharset=utf8,nolock,noauto,x-systemd.automount,x-systemd.device-timeout=10s", vers, credentials);
+            mnt_opts = sdscatfmt(mnt_opts, "%s,%s,ro,uid=mpd,gid=audio,iocharset=utf8,noauto,x-systemd.automount,x-systemd.device-timeout=10s", vers, credentials);
         }
         else if (type == 3)
         {
